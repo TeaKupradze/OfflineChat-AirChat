@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="dark sroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AirChat — Communication Without Borders</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #111317;
+            color: #e2e2e7;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 32, 35, 0.45);
+            backdrop-filter: blur(60px);
+            -webkit-backdrop-filter: blur(60px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+        .cyan-glow-text {
+            text-shadow: 0 0 20px rgba(0, 241, 254, 0.45);
+        }
+        .light-leak {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .mesh-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(0, 241, 254, 0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Top Navigation Ornament -->
+    <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 py-2 mt-4">
+        <nav class="bg-zinc-900/60 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-between w-[90%] md:w-[600px] px-6 py-3 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#00f1fe]" style="font-variation-settings: 'FILL' 1;">hub</span>
+                <span class="text-lg font-bold tracking-tighter text-zinc-100">AwareChat</span>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a class="text-zinc-500 hover:text-white transition-colors text-xs font-semibold tracking-widest" href="#features">FEATURES</a>
+                <a class="text-zinc-500 hover:text-white transition-colors text-xs font-semibold tracking-widest" href="#technology">TECH</a>
+                <a class="text-zinc-500 hover:text-white transition-colors text-xs font-semibold tracking-widest" href="#privacy">PRIVACY</a>
+            </div>
+            <button onclick="alert('AirChat client builds are simulated! Install packages using AI Studio to download natively.')" class="hidden md:flex items-center gap-2 px-4 py-2 bg-[#00f1fe] text-zinc-950 rounded-full text-xs font-bold hover:brightness-110 transition-all">
+                <span>DOWNLOAD</span>
+                <span class="material-symbols-outlined text-[18px]">download</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative">
+        <section class="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 mesh-gradient pointer-events-none"></div>
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00f1fe]/5 blur-[120px] rounded-full"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-16">
+                <div class="flex-1 text-left space-y-8 animate-fade-in">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-[1.05]">
+                            Communication <br/>
+                            <span class="text-[#00f1fe] cyan-glow-text">Without Borders!</span>
+                        </h1>
+                        <p class="text-zinc-400 text-lg md:text-xl max-w-xl leading-relaxed">
+                            Stay connected with friends anytime, anywhere, even when you have absolutely no internet access or mobile network coverage. No central storage, purely localized.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <button onclick="document.getElementById('cta-section').scrollIntoView({behavior: 'smooth'})" class="px-10 py-5 bg-[#00f1fe] text-zinc-950 rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(0,241,254,0.3)] hover:brightness-110 transition-all">
+                            <span>Download Now</span>
+                            <span class="material-symbols-outlined">download</span>
+                        </button>
+                        <button onclick="document.getElementById('tech-section').scrollIntoView({behavior: 'smooth'})" class="px-10 py-5 glass-card text-white rounded-full font-semibold text-lg hover:bg-white/10 transition-all">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex-1 flex justify-center md:justify-end">
+                    <div class="relative group">
+                        <div class="absolute -inset-8 bg-[#00f1fe]/20 blur-[60px] rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <img alt="AirChat App Icon" class="w-48 h-48 md:w-64 md:h-64 rounded-[3rem] shadow-2xl light-leak relative z-10" src="https://lh3.googleusercontent.com/aida/AP1WRLsybJ9pYHj355IM1fEte-vChKcCQfh61YIeyAhYx0JajjqaUAAES4RcNE_7jd8KF7J5_sqhV-zo5Ks-7kmhpmr-EUF1SZnjpcI39K04v87Mb7CdXoUCUhWpjlvLyP-Lc2wv4FRngwTnS2vNsrr1AGQxgCbFG9QEL9-ecwW3a_DAOcAeDzOXEt0mDb5d9iZy-2_Kcio1gNfqOMqKJvUpi8Rag6PWom_IurmxPVb_2pIV--8npUbtxgrokg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="tech-section" class="relative py-24 px-6 bg-zinc-950/40">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-[#00f1fe] text-xs font-semibold tracking-wider">
+                        <span class="material-symbols-outlined text-[16px]">wifi_tethering</span>
+                        WI-FI AWARE TECH
+                    </div>
+                    <h2 class="text-4xl font-bold text-white tracking-tight">Advanced Mesh Connectivity</h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed">
+                        AirChat uses advanced <span class="text-white font-semibold">Wi-Fi Aware technology</span> to create a local peer-to-peer ecosystem. This protocol allows your device to discover and connect with others directly, enabling seamless offline communication. No towers, no routers, just pure signal.
+                    </p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <div class="flex -space-x-3">
+                            <div class="w-12 h-12 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[#00f1fe]">person</span>
+                            </div>
+                            <div class="w-12 h-12 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[#00f1fe]">person</span>
+                            </div>
+                            <div class="w-12 h-12 rounded-full border-2 border-zinc-900 bg-zinc-800 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[#00f1fe]">person</span>
+                            </div>
+                        </div>
+                        <span class="text-xs text-zinc-500 font-semibold tracking-wide">Connected in your local mesh</span>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden glass-card light-leak p-4">
+                        <img alt="Mesh Network Visualization" class="w-full h-full object-cover rounded-2xl opacity-90" src="https://lh3.googleusercontent.com/aida/AP1WRLs_YElE3oJIQJ6bBIe5YKTyDWLKPgexlOFcDZ3mf0iVrX69jMDGuARuxNAK2C0txSjMd4xAA0nVecowD6-DA8hKzaYcPgLNhFMjaAQRQMHNV2uq3K53qK3FJHu98R99SiTLzJRRtdqz8H0cNt3ivtTLxfK2aVTg5IrfIhl55HadnhjaY7f2o0P5NmteyikM2rQ3ccHoIKVLg8pdnN9OC7pPj4kxSPSfAtMHMENcufiMXe4vG2OWY65qk04"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Bento Grid -->
+        <section id="features" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 text-center">
+                    <h2 class="text-4xl font-bold tracking-tight mb-4">Engineered for Isolation</h2>
+                    <p class="text-zinc-400 max-w-xl mx-auto">High-fidelity tools that work in the harshest dead zones on the planet.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Feature Card 1: Large -->
+                    <div class="md:col-span-2 glass-card rounded-[2rem] p-10 flex flex-col justify-between min-h-[360px] light-leak">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 rounded-2xl bg-[#00f1fe]/10 flex items-center justify-center text-[#00f1fe] mb-4">
+                                <span class="material-symbols-outlined text-3xl">chat_bubble</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Offline Chat</h3>
+                            <p class="text-zinc-400">Text without internet. Whether you're in an airplane, a basement, or deep in the mountains, your messages find their destination through local mesh hopping.</p>
+                        </div>
+                        <div class="mt-8 flex gap-4 overflow-hidden py-2">
+                            <div class="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm">"Hey, you there?"</div>
+                            <div class="px-6 py-3 rounded-xl bg-[#00f1fe]/20 border border-[#00f1fe]/20 text-[#00f1fe] text-sm">"Always."</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="glass-card rounded-[2rem] p-10 light-leak">
+                        <div class="w-14 h-14 rounded-2xl bg-[#00f1fe]/10 flex items-center justify-center text-[#00f1fe] mb-6">
+                            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Photo Sharing</h3>
+                        <p class="text-zinc-400">High-speed regional photo and media transfer. Share offline moments instantly without using a single byte of cellular data.</p>
+                    </div>
+                    
+                    <!-- Feature 3 -->
+                    <div class="glass-card rounded-[2rem] p-10 light-leak">
+                        <div class="w-14 h-14 rounded-2xl bg-[#00f1fe]/10 flex items-center justify-center text-[#00f1fe] mb-6">
+                            <span class="material-symbols-outlined text-3xl">bolt</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 font-sans">Quick Pairing</h3>
+                        <p class="text-zinc-400">Automatic local neighbor discovery. Just boot the application and link with friends instantly. No manual pairing.</p>
+                    </div>
+                    
+                    <!-- Feature 4 -->
+                    <div class="glass-card rounded-[2rem] p-10 light-leak">
+                        <div class="w-14 h-14 rounded-2xl bg-[#00f1fe]/10 flex items-center justify-center text-[#00f1fe] mb-6">
+                            <span class="material-symbols-outlined text-3xl">history</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Chat History</h3>
+                        <p class="text-zinc-400">Review transactions and logs. History stays entirely decentralized and is stored on-device, fully tamper-proof.</p>
+                    </div>
+                    
+                    <!-- Feature 5 -->
+                    <div class="glass-card rounded-[2rem] p-10 light-leak">
+                        <div class="w-14 h-14 rounded-2xl bg-[#00f1fe]/10 flex items-center justify-center text-[#00f1fe] mb-6">
+                            <span class="material-symbols-outlined text-3xl">shield</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Secure &amp; Direct</h3>
+                        <p class="text-zinc-400">Total peer-to-peer privacy. Zero intermediary nodes can access your packets, guarded heavily with military-level security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Priority Section -->
+        <section id="privacy" class="py-24 px-6 relative">
+            <div class="max-w-4xl mx-auto glass-card rounded-[2.5rem] p-12 md:p-20 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <span class="material-symbols-outlined text-[180px] text-white">security</span>
+                </div>
+                <div class="relative z-10 space-y-12">
+                    <div class="space-y-4">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tighter">Privacy is our priority</h2>
+                        <p class="text-xs tracking-widest text-[#00f1fe] font-bold uppercase">Fully offline, peer-to-peer.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
+                        <div>
+                            <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Data Collection</h4>
+                            <p class="text-xl font-bold text-white">None.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Message Security</h4>
+                            <p class="text-xl font-bold text-white">AES-256</p>
+                        </div>
+                        <div>
+                            <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Third-Party</h4>
+                            <p class="text-xl font-bold text-white">None.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-zinc-500 text-xs font-bold uppercase mb-2">Server Logins</h4>
+                            <p class="text-xl font-bold text-white">None.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Contact Section -->
+        <section id="cta-section" class="py-24 px-6 bg-[#00f1fe]/5">
+            <div class="max-w-3xl mx-auto text-center space-y-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tighter">Ready for the Mesh?</h2>
+                <p class="text-zinc-400 text-lg">Download AirChat today and never worry about connectivity again.</p>
+                <div class="flex justify-center pt-6">
+                    <button onclick="alert('Client app downloaded!')" class="px-12 py-6 bg-white hover:bg-zinc-200 text-zinc-950 rounded-full font-bold text-lg flex items-center justify-center gap-4 transition-all">
+                        <span class="material-symbols-outlined">apps</span>
+                        <span>Get on App Store</span>
+                    </button>
+                </div>
+                <div class="pt-20 border-t border-white/5 space-y-4">
+                    <p class="text-zinc-500 text-xs tracking-wider">HAVE QUESTIONS?</p>
+                    <a class="text-[#00f1fe] hover:underline font-bold text-lg" href="mailto:support@airchat.app">support@airchat.app</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 text-center border-t border-white/5 mt-12 bg-zinc-950/60">
+        <div class="flex justify-center gap-6 mb-8 text-zinc-500">
+            <span class="material-symbols-outlined hover:text-white cursor-pointer transition-colors">public</span>
+            <span class="material-symbols-outlined hover:text-white cursor-pointer transition-colors">share</span>
+            <span class="material-symbols-outlined hover:text-white cursor-pointer transition-colors">group</span>
+        </div>
+        <p class="text-zinc-600 text-xs tracking-wider">© 2026 AWARECHAT. TACTILE DIGITALISM SERIES.</p>
+    </footer>
+
+</body>
+</html>
