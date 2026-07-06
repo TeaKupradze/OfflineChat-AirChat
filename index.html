@@ -191,49 +191,133 @@
             </div>
         </section>
 
-        <!-- Privacy Priority Section -->
+        <!-- Privacy & Terms Section -->
         <section id="privacy" class="py-24 px-6 relative">
             <div class="max-w-4xl mx-auto glass-card rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-8 opacity-5">
                     <span class="material-symbols-outlined text-[180px] text-white">security</span>
                 </div>
                 <div class="relative z-10 space-y-10">
-                    <div class="space-y-4">
-                        <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tighter">Privacy Policy</h2>
-                        <p class="text-xs tracking-widest text-[#00f1fe] font-extrabold uppercase font-mono">Fully offline, peer-to-peer.</p>
-                        <p class="text-zinc-300 text-sm md:text-base leading-relaxed max-w-2xl pt-2">
-                            Your privacy is extremely important to us. <strong class="text-white">AirChat</strong> is designed as a fully offline, peer-to-peer communication tool.
-                        </p>
+                    <!-- Tab Selector -->
+                    <div class="flex flex-wrap gap-3 border-b border-white/10 pb-6">
+                        <button id="tab-btn-privacy" onclick="switchPrivacyTab('privacy')" class="px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-[#00f1fe]/10 border-[#00f1fe] text-[#00f1fe]">
+                            Privacy Policy
+                        </button>
+                        <button id="tab-btn-terms" onclick="switchPrivacyTab('terms')" class="px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-transparent border-white/10 text-zinc-400 hover:text-white">
+                            Terms of Service (EULA)
+                        </button>
                     </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/10">
-                        <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
-                            <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">🔒 Data Collection</div>
-                            <p class="text-xs text-zinc-300 leading-relaxed">
-                                We do not collect, store, or track any personal information, account data, or user analytics.
+
+                    <!-- Privacy Tab Content -->
+                    <div id="content-privacy" class="space-y-10">
+                        <div class="space-y-4">
+                            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tighter">Privacy Policy</h2>
+                            <p class="text-xs tracking-widest text-[#00f1fe] font-extrabold uppercase font-mono">Fully offline, peer-to-peer.</p>
+                            <p class="text-zinc-300 text-sm md:text-base leading-relaxed max-w-2xl pt-2">
+                                Your privacy is extremely important to us. <strong class="text-white">AirChat</strong> is designed as a fully offline, peer-to-peer communication tool.
                             </p>
                         </div>
-                        <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
-                            <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">📡 Message Security</div>
-                            <p class="text-xs text-zinc-300 leading-relaxed">
-                                All messages and media shared through the app are transmitted directly between devices via local network protocols (Wi-Fi or Bluetooth). No data is uploaded to external servers.
-                            </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/10">
+                            <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
+                                <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">🔒 Data Collection</div>
+                                <p class="text-xs text-zinc-300 leading-relaxed">
+                                    We do not collect, store, or track any personal information, account data, or user analytics.
+                                </p>
+                            </div>
+                            <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
+                                <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">📡 Message Security</div>
+                                <p class="text-xs text-zinc-300 leading-relaxed">
+                                    All messages and media shared through the app are transmitted directly between devices via local network protocols (Wi-Fi or Bluetooth). No data is uploaded to external servers.
+                                </p>
+                            </div>
+                            <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
+                                <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">🛡️ Third-Party Sharing</div>
+                                <p class="text-xs text-zinc-300 leading-relaxed">
+                                    Since we do not collect any user data, we do not share or sell any information to third parties.
+                                </p>
+                            </div>
                         </div>
-                        <div class="bg-zinc-950/40 p-5 rounded-2xl border border-white/5 space-y-2">
-                            <div class="text-[10px] text-[#00f1fe] font-bold uppercase tracking-wider">🛡️ Third-Party Sharing</div>
-                            <p class="text-xs text-zinc-300 leading-relaxed">
-                                Since we do not collect any user data, we do not share or sell any information to third parties.
-                            </p>
+
+                        <div class="text-xs text-zinc-400 border-t border-white/5 pt-6 leading-relaxed flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <span>
+                                If you have any questions regarding this privacy policy, please contact us via email.
+                            </span>
+                            <a href="mailto:supportairchat@gmail.com" class="text-[#00f1fe] hover:underline font-bold shrink-0">
+                                supportairchat@gmail.com
+                            </a>
                         </div>
                     </div>
 
-                    <div class="text-xs text-zinc-400 border-t border-white/5 pt-6 leading-relaxed flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                        <span>
-                            If you have any questions regarding this privacy policy, please contact us via email.
-                        </span>
-                        <a href="mailto:supportairchat@gmail.com" class="text-[#00f1fe] hover:underline font-bold shrink-0">
-                            supportairchat@gmail.com
-                        </a>
+                    <!-- Terms (EULA) Tab Content -->
+                    <div id="content-terms" class="space-y-10 hidden">
+                        <div class="space-y-4">
+                            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tighter">Terms of Service (EULA)</h2>
+                            <p class="text-xs tracking-widest text-[#00f1fe] font-extrabold uppercase font-mono">Apple Standard Licensed Application End User License Agreement</p>
+                            <p class="text-zinc-350 text-sm md:text-base leading-relaxed max-w-2xl pt-2">
+                                By downloading or using the <strong class="text-white">AirChat</strong> application, you agree to be bound by the following standard terms, which supplement or replace any other terms in accordance with Apple’s guidelines.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6 max-h-[300px] overflow-y-auto pr-4 text-xs text-zinc-300 pt-4 border-t border-white/10">
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">1. Scope of License</h4>
+                                <p class="leading-relaxed">
+                                    Licensor grants to you a nontransferable license to use the Licensed Application on any Apple-branded Products that you own or control and as permitted by the Usage Rules set forth in the App Store Terms of Service.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">2. Consent to Use of Data</h4>
+                                <p class="leading-relaxed">
+                                    You agree that Licensor may collect and use technical data and related information to facilitate software updates and product support. Since AirChat operates entirely offline, no personal communication logs or analytics are ever collected.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">3. Termination</h4>
+                                <p class="leading-relaxed">
+                                    The license is effective until terminated by you or Licensor. Your rights will terminate automatically if you fail to comply with any of these terms.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">4. Offline Communication Disclaimer</h4>
+                                <p class="leading-relaxed">
+                                    AirChat is a local peer-to-peer network application. Connectivity depends on physical proximity, regional signals, and the presence of active neighboring nodes.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">5. NO WARRANTY</h4>
+                                <p class="leading-relaxed">
+                                    USE OF THE APPLICATION IS AT YOUR SOLE RISK. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITH ALL FAULTS.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">6. Limitation of Liability</h4>
+                                <p class="leading-relaxed">
+                                    TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL LICENSOR BE LIABLE FOR PERSONAL INJURY OR INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF YOUR USE OF THE APPLICATION.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">7. Legal Compliance</h4>
+                                <p class="leading-relaxed">
+                                    You represent and warrant that (i) you are not in an embargoed country, and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-white text-sm uppercase tracking-wide">8. Third Party Beneficiary</h4>
+                                <p class="leading-relaxed">
+                                    Apple and Apple's subsidiaries are third-party beneficiaries of this EULA and have the right to enforce this agreement.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-xs text-zinc-400 border-t border-white/5 pt-6 leading-relaxed flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <span>
+                                For support, inquiries, or claims regarding AirChat, please contact:
+                            </span>
+                            <a href="mailto:supportairchat@gmail.com" class="text-[#00f1fe] hover:underline font-bold shrink-0">
+                                supportairchat@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,6 +351,27 @@
         </div>
         <p class="text-zinc-600 text-xs tracking-wider">© 2026 AWARECHAT. TACTILE DIGITALISM SERIES.</p>
     </footer>
+
+    <script>
+        function switchPrivacyTab(tab) {
+            const privacyBtn = document.getElementById('tab-btn-privacy');
+            const termsBtn = document.getElementById('tab-btn-terms');
+            const privacyContent = document.getElementById('content-privacy');
+            const termsContent = document.getElementById('content-terms');
+
+            if (tab === 'privacy') {
+                privacyBtn.className = "px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-[#00f1fe]/10 border-[#00f1fe] text-[#00f1fe]";
+                termsBtn.className = "px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-transparent border-white/10 text-zinc-400 hover:text-white";
+                privacyContent.classList.remove('hidden');
+                termsContent.classList.add('hidden');
+            } else {
+                privacyBtn.className = "px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-transparent border-white/10 text-zinc-400 hover:text-white";
+                termsBtn.className = "px-5 py-2.5 text-xs font-bold tracking-wider uppercase rounded-full transition-all border bg-[#00f1fe]/10 border-[#00f1fe] text-[#00f1fe]";
+                privacyContent.classList.add('hidden');
+                termsContent.classList.remove('hidden');
+            }
+        }
+    </script>
 
 </body>
 </html>
